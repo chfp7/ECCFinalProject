@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> Ehden Country Club </a>
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#room">room</a>
+         <a href="#gallery">gallery</a>
+         <a href="#reservation" class="btn"> book now</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide1.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Where you can Warm up</h3>
+                  <a href="#" class="btn"> Start Booking</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide2.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Where you can cool down </h3>
+                  <a href="#" class="btn"> Reservation </a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide3.jpg) no-repeat;">
+               <div class="content">
+                  <h3>it's where dreams come true</h3>
+                  <a href="#" class="btn"> Membership </a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide4.jpg) no-repeat;">
+               <div class="content">
+                  <h3> Where you can stay fit</h3>
+                  <a href="#" class="btn">Book Now </a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <section class="availability">
+
+      <form action="">
+
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 adults</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               
+            </select>
+         </div>
+
+         <div class="box">
+            <p>children <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="0">0 children</option>
+               <option value="1">1 children</option>
+               <option value="2">2 children</option>
+               <option value="3">3 children</option>
+               <option value="4">4 children</option>
+               <option value="5">5 children</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 rooms</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+
+      </form>
+
+   </section>
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/about.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>about us</h3>
+            <p>Nestled amidst the serene majesty of the mountains, Ehden Country Club invites you to experience a haven of relaxation and adventure. As a distinguished hotel and resort, we offer a sanctuary where guests can embrace the enchantment of every season. In the winter months, our rustic fireside warmth beckons weary travelers to unwind in cozy comfort, while savoring the tranquil beauty of snow-covered landscapes. Meanwhile, summertime unveils a playground of vitality, where guests can rejuvenate in our refreshing pools, engage in spirited tennis matches, and sculpt their bodies in our state-of-the-art gym facilities. </p>
+            <p>At Ehden Country Club, Wellness And Indulgence Harmonize Seamlessly, As Our Restaurant Tantalizes Taste Buds With A Fusion Of Healthy And Delectable Cuisine Crafted From Locally-Sourced Ingredients. Whether Seeking Solace Or Adventure, Our Retreat Promises An Unforgettable Escape Where Every Moment Is Infused With Unparalleled Tranquility And Vitality.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="room" id="room">
+
+      <h1 class="heading">our rooms</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$150/night</span>
+                  <img src="images/room-1.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Standard room</h3>
+                  <p>Standard room with everything you need, TV, cozy bed, fireplace, kitchenette, and a great bathroom</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$200/night</span>
+                  <img src="images/room-2.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Standard+ room</h3>
+                  <p>What diffrenciates between standard and standard+ is the view</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$250/night</span>
+                  <img src="images/room-3.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>exclusive room</h3>
+                  <p>This room is more spaceous, has a great view, and contains new modern furniture, and a nice balcony</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$300/night</span>
+                  <img src="images/room-4.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>exclusive+ room</h3>
+                  <p>Same perks as exclusive room, but contains a separate living room with a jacuzzi</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$399.99/night</span>
+                  <img src="images/room-5.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Suite</h3>
+                  <p>A Suite with huge space has a big balcony, new modern furniture, the most comfortable place to be, a play place for kids, even a fitness room. </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">$500/night</span>
+                  <img src="images/room-6.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>VIP</h3>
+                  <p>An entire gym, entire kitchen with a private chef, massive bathroom with jacuzzi and ice bath, huge balcony with insane view, and more...</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <section class="services">
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>swimming pool</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>food & drink</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>restaurant</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>fitness</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service5.png" alt="">
+            <h3>beauty spa</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service6.png" alt="">
+            <h3>resort</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">our gallery</h1>
+
+      <div class="swiper gallery-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery1.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery2.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery3.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery4.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery5.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/gallery6.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+
+   <section class="reservation" id="reservation">
+
+      <h1 class="heading">book now</h1>
+
+      <form action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name" required>
+            </div>
+
+            <div class="box">
+               <p>email <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Email" required>
+            </div>
+
+            <div class="box">
+               <p>check in <span>*</span></p>
+               <input type="date" class="input" required>
+            </div>
+
+            <div class="box">
+               <p>check out <span>*</span></p>
+               <input type="date" class="input" required>
+            </div>
+
+            <div class="box">
+               <p>adults <span>*</span></p>
+               <select name="adults" class="input" required>
+                  <option value="1">1 adults</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>children <span>*</span></p>
+               <select name="child" class="input" required>
+                  <option value="0">0 children</option>
+                  <option value="1">1 children</option>
+                  <option value="2">2 children</option>
+                  <option value="3">3 children</option>
+                  <option value="4">4 children</option>
+                  <option value="5">5 children</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>rooms <span>*</span></p>
+               <select name="rooms" class="input" required>
+                  <option value="1">1 rooms</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>room type <span>*</span></p>
+               <select name="type" class="input" required>
+                  <option value="1">standard rooms</option>
+                  <option value="2">exclusive rooms</option>
+                  <option value="3">suite rooms</option>
+                  <option value="4">VIP rooms</option>
+               </select>
+            </div>
+   
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+
+      </form>
+
+   </section>
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +961 76 398 423 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +961 06 999 999</a>
+            <a href="#"> <i class="fas fa-envelope"></i> ehdencountryclub@countryclub.lb</a>
+            <a href="https://www.google.com/maps/place/Ehden+Country+Club/@34.2902037,35.9453351,17z/data=!4m20!1m10!3m9!1s0x152202fbab1a36a3:0x225383ae6f579a1e!2sEhden+Country+Club!5m2!4m1!1i2!8m2!3d34.2901993!4d35.94791!16s%2Fg%2F1thsztqh!3m8!1s0x152202fbab1a36a3:0x225383ae6f579a1e!5m2!4m1!1i2!8m2!3d34.2901993!4d35.94791!16s%2Fg%2F1thsztqh?entry=ttu" target="_blank"> <i class="fas fa-map"></i> Ehden, Lebanon</a>
+         </div>
+
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> rooms</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> gallery</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reservation</a>
+         </div>
+
+         <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Gym</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Restaurant </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Personal training</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Swimming Lessons</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Daycare</a>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="https://www.instagram.com/chfp7/" class="fab fa-facebook-f" target="_blank"></a>
+         <a href="https://www.instagram.com/chfp7/" class="fab fa-instagram" target="_blank"></a>
+         <a href="https://www.instagram.com/chfp7/" class="fab fa-twitter" target="_blank"></a>
+         <a href="https://www.instagram.com/chfp7/" class="fab fa-pinterest" target="_blank"></a>
+      </div>
+
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
